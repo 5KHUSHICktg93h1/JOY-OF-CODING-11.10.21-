@@ -1,0 +1,23 @@
+# JOY-OF-CODING-11.10.21-
+#include<stdio.h> int main()
+{
+int a[10],i;
+float b[10],s=0,avg=0;
+printf("Enter Mr.Int's daily wages:\n"); 
+for(i=0;i<6;i++)
+scanf("%d",&a[i]);
+printf("Enter Mr.Float's daily wages:\n");
+for(i=0;i<6;i++)
+scanf("%f",&b[i]);
+for(i=0;i<6;i++)
+s=s+a[i];
+avg=s/6;
+printf("Mr.Int's weekly salary = Rs.%.3f\n",s);
+printf("Mr.Int's average salary = Rs.%.3f\n",avg); s=0;
+avg=0;
+for(i=0;i<6;i++)
+s=s+b[i];
+avg=s/6;
+printf("Mr.Float's weekly salary = Rs.%.3f\n",s);
+printf("Mr.Float's average salary = Rs.%.3f\n",avg);
+return 0; }
