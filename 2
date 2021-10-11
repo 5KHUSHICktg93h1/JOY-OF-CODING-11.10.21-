@@ -1,0 +1,34 @@
+#include<stdio.h> int main()
+{
+int a[10],i;
+float b[10];
+char c[50];
+printf("Enter Mr.Int's daily wages:\n"); 
+for(i=0;i<6;i++)
+scanf("%d",&a[i]);
+printf("Enter Mr.Float's daily wages:\n");
+for(i=0;i<6;i++)
+scanf("%f",&b[i]);
+printf("Enter Mr.Char's information:\n");
+for(i=0;i<12;i++)
+scanf("%c",&c[i]);
+printf("Mr.Int's daily wages:\n"); 
+for(i=0;i<6;i++)
+printf("Rs.%d ",a[i]);
+printf("\nMr.Float's daily wages:\n"); 
+for(i=0;i<6;i++)
+printf("Rs.%.2f ",b[i]);
+printf("\nMr.Char's information:"); 
+for(i=0;i<12;i++)
+printf("%c ",c[i]);
+printf("\nIn reverse order:\n");
+printf("Mr.Int's daily wages:\n"); for(i=5;i>=0;i--)
+printf("Rs.%d ",a[i]); 
+printf("\nMr.Float's daily wages:\n");
+for(i=5;i>=0;i--)
+printf("Rs.%.2f ",b[i]);
+printf("\nMr.Char's information:\n");
+for(i=11;i>=0;i--)
+printf("%c ",c[i]); 
+return 0;
+}
